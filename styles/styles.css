@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: white;
+	height: 50%;
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(0, 122, 204, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    margin: 20px auto;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: auto;
+	text-align: center;
+    box-shadow: 0px 5px 0 rgba(0, 122, 204, 0.35);
+    border-color: rgb(96, 163, 207);
+	transition: 0.2s;
+}
+
+button:hover {
+	transform: scale(0.95);
+	background-color: rgba(0, 122, 204, 0.8);
+}
+
+button:active {
+	transform: scale(0.7);
+	background-color: rgba(0, 122, 204, 0.6);
+}
+
+img {
+    padding: 7.5px 7.5px;
+    background-color: rgba(42, 42, 42, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    margin: 20px auto;
+    width: 30px;
+    border-radius: 2px;
+    height: 30px;
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, 0.25);
+    border-color: rgb(45, 45, 45);
+	transition: 0.2s;
+}
+
+img:hover {
+	transform: scale(0.85);
+	background-color: rgba(42, 42, 42, 0.8);
+}
+
+img:active {
+	transform: scale(0.7);
+	background-color: rgba(42, 42, 42, 0.6);
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 35vh;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+textarea {
+    width: 15vw;
+    height: 45vh;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: rgb(145, 144, 144);
+    border: 1px solid #555;
+    padding: 25px;
+    font-weight: 600;
+    resize: none;
+    border-radius: 15px;
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    border-color: rgb(45, 45, 45);
+    z-index: 4;
+    
+}
+
+textarea:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    textarea {
+        width: 90%;
+        height: 100px;
+    }
+}
